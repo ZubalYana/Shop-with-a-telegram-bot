@@ -9,10 +9,19 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
 </head>
 <body>
+    <div class="popup">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="phone" placeholder="Phone">
+        <button id="send">Send</button>
+
+    </div>
     <div class="wrap">
         <header>
             <h2>Creator</h2>
-            <div id="cartCounter">0</div>
+            <div class="cartContainer">
+                <div id="cartCounter">0</div>
+                <button id="sendData">Підтвердити</button>
+            </div>
         </header>
         <main>
             <div class="goodsContainer">

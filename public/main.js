@@ -50,3 +50,9 @@ $('.wrap').click(function(e){
         }
     }
 })
+$('#cartCounter').click(function(){
+    $('#sendData').css('display', 'flex')
+})
+$('#sendData').click(function(){
+    $('.popup').css('display', 'flex')
+})
