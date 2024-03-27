@@ -56,3 +56,12 @@ $('#cartCounter').click(function(){
 $('#sendData').click(function(){
     $('.popup').css('display', 'flex')
 })
+$('#send').click(()=>{
+    let data = {
+        list: cardList,
+        name: $('#name').val(),
+        phone: $('#phone').val(),
+
+    }
+    axios.post('/send', data);
+})
